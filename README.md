@@ -25,4 +25,4 @@
 	* `String reverseLookup(String phoneNumber)`
 		* returns a name for the respective input `phoneNumber`
 	* `String getAllContactNames()`
-		* returns a list of all names in this `PhoneBook`
+		* returns a list of all names in this `PhoneBook` 

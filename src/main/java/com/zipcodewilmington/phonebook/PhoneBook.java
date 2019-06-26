@@ -1,5 +1,7 @@
 package com.zipcodewilmington.phonebook;
 
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -7,11 +9,14 @@ import java.util.Map;
  * Created by leon on 1/23/18.
  */
 public class PhoneBook {
-    public PhoneBook(Map<String, List<String>> map) {
+    Map<String, List<String>> map;
+    ArrayList <String> phoneNumbers = new ArrayList<>();
+
+    public PhoneBook(Map<String, List<String>> map) {this.map=map;
     }
 
-    public PhoneBook() {
-        this(null);
+    public PhoneBook() { map= new LinkedHashMap<>();
+        // this(null);
     }
 
     public void add(String name, String phoneNumber) {
@@ -40,6 +45,6 @@ public class PhoneBook {
     }
 
     public Map<String, List<String>> getMap() {
-        return null;
+        return map;
     }
 }
